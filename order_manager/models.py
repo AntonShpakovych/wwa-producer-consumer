@@ -26,7 +26,7 @@ class Employee(AbstractUser):
 
 
 class Order(models.Model):
-    task_id = models.UUIDField(max_length=16, unique=True)
+    task_id = models.UUIDField(unique=True)
     name = models.CharField(max_length=255)
     description = models.TextField()
     employee = models.ForeignKey(
