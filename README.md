@@ -12,6 +12,6 @@ docker compose up --build
 ```
 
 # Info:
- - Password for employee provided in .env.sample
+ - Password for employee and employee admin provided in .env.sample
  - HTML templates are created in a very simple way according to the documentation
  - Only one app was created according to the documentation
