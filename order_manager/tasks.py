@@ -4,5 +4,5 @@ from order_manager.services.order_service import OrderService
 
 
 @app.task()
-def produce_order():
+def task_produce_order():
     OrderService.produce_order()
