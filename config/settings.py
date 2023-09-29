@@ -107,7 +107,7 @@ CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND")
 
 CELERY_BEAT_SCHEDULE = {
     "sample_task": {
-        "task": "order_manager.tasks.produce_order",
+        "task": "order_manager.tasks.task_produce_order",
         "schedule": crontab(minute="*/1"),
     },
 }

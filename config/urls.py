@@ -4,9 +4,9 @@ from django.views.generic import RedirectView
 
 
 urlpatterns = [
+    path("", RedirectView.as_view(url="orders/", permanent=True)),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
-    path("", RedirectView.as_view(url="orders/", permanent=True)),
     path("orders/", include("order_manager.urls", namespace="order_manager")),
 ]
 
