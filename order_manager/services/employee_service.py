@@ -1,3 +1,4 @@
+import os
 from typing import Dict
 
 from django.contrib.auth import get_user_model
@@ -27,5 +28,5 @@ class EmployeeService:
 
         return {
             "username": faker.user_name(),
-            "password": faker.password()
+            "password": os.getenv("USER_PASSWORD")
         }

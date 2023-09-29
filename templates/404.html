@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <h2>Oops! This Page is Not Found.</h2>
+  <a class="btn btn-primary d-inline-flex align-items-center mt-3" href="{% url 'order_manager:order-list' %}"><i class="ri-home-4-line"></i>Back to Orders</a>
+{% endblock %}
